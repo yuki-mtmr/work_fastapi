@@ -3,8 +3,8 @@ from typing import Optional
 
 def get_profile(
         email: str,
-        username: str,
-        age: int
+        username: Optional[str] = None,
+        age: Optional[int] = None
 ) -> dict:
     profile = {"email": email}
     if username:
